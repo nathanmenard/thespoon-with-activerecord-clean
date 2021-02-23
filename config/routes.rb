@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   get "restaurants", to: "restaurants#index"
 
   # See details about one restaurant
+  get "restaurants/:id", to: "restaurants#show", as: :restaurant
+
   # Create a restaurant
   # Update a restaurant
   # Destroy a restaurant
